@@ -1,10 +1,6 @@
 services:
   app:
+    image: algins/devops-for-developers-project-74:1.0.0
     build:
       context: .
-      dockerfile: Dockerfile
-    command: make start
-    ports:
-      - "8080:8080"
-    volumes:
-      - "./app:/app"
+      dockerfile: Dockerfile.production
