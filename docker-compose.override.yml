@@ -9,4 +9,20 @@ services:
     command: make dev
     volumes:
       - "./app:/app"
-      
+
+  webserver:
+    image: caddy:2.6
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - "./services/caddy/Caddyfile:/etc/caddy/Caddyfile"
+      - "./app:/etc/caddy/app"
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+
+volumes:
+  caddy_data:
+  caddy_config:
