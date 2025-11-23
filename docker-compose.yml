@@ -1,6 +1,6 @@
 services:
   app:
-    image: algins/devops-for-developers-project-74:1.0.0
+    image: algins/devops-for-developers-project-74
     build:
       context: .
       dockerfile: Dockerfile.production
