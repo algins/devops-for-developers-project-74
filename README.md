@@ -26,4 +26,5 @@ $ make test
 ```
 
 ### Docker Hub Image:
-The built image is available on Docker Hub: `algins/devops-for-developers-project-74`
+The built image is available on Docker Hub:  
+[algins/devops-for-developers-project-74](https://hub.docker.com/r/algins/devops-for-developers-project-74)
