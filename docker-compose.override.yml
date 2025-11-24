@@ -9,7 +9,7 @@ services:
     volumes:
       - "./app:/app"
 
-  webserver:
+  caddy:
     image: caddy:2.6
     ports:
       - "443:443"
