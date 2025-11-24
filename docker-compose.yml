@@ -12,7 +12,8 @@ services:
       DATABASE_HOST: ${DATABASE_HOST}
     command: make test
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   db:
     image: postgres
