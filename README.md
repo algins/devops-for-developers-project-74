@@ -22,7 +22,7 @@ $ make start
 
 ### Run tests:
 ```sh
-$ make ci
+$ make test
 ```
 
 ### Docker Hub Image:
